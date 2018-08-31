@@ -6,16 +6,19 @@ The Visual Studio used was 2015 Express and the Backend Architecture used was ba
 
 Becasuse of that, to open this application at least two IIS Express instances have to be up (Crossover.Api) and (Crossover.Frontend). The Api will run on port 9000 and the Frontend is running on port 10000. So be sure both instances are up and running.
 
-This architecture brought a level of complexy because it requires CORS and it is configured right for the WebApi, but I failed to make it work for SignalR (real-time application), most because of my time-limit. I couldn´t afford to work for 2 days in this project and it pay it the price when I had to deal with it for the first time. If time were extended I could complete it.
+This architecture brought a level of complexy because it requires CORS and it is configured right for the WebApi, but I failed to make it work for SignalR (real-time application), most because of my time-limit. I couldnÂ´t afford to work for 2 days in this project and it pay it the price when I had to deal with it for the first time. If time were extended I could complete it.
 
 To install front-end dependencies it is required to run NPM INSTALL and then BOWER INSTALL and it will take care of the rest. To run the tests with code coverage example type GRUNT test:unit
 
 2. To open the project just select the option Start Multiple Projects and select .Api and .Frontend to be started.
 
-3. Karma running is installed so just run grunt test:unit and it will run all the tests. I´ve setup unit test examples for most relevant part of the application. Since this project is for avaliation and not production the focus was to show the skills and not have 100% code coverage. The project has nos 52% of code coverage.
+3. Karma running is installed so just run grunt test:unit and it will run all the tests. IÂ´ve setup unit test examples for most relevant part of the application. Since this project is for avaliation and not production the focus was to show the skills and not have 100% code coverage. The project has nos 52% of code coverage.
 
-4. SignalR failed to run with CORS, OWIN and WebApi. Probably a configuration in the Startup that I still haven´t figured out. There is code in the examples but it was not integrated because of that. I will try to have it done at the presentation. 
+4. SignalR failed to run with CORS, OWIN and WebApi. Probably a configuration in the Startup that I still havenÂ´t figured out. There is code in the examples but it was not integrated because of that. I will try to have it done at the presentation. 
 
 Signalr will be responsible to send the application core appResourceFactory updates about the resource and surrogatekey to any client listening. It will be receiving instant feedback. 
 
 Unfortunaly I did not got enought time to figure why it is giving problem with CORS
+
+Update as Nov. 26 - 2015
+Anyway. I have uploaded today a new version of the project to appharbor in the address: http://crossovercafe.apphb.com/ - The objective was to finish the project with all the features requested. I do know the time has already expired and it has already been graded, but for me the most important is to complete the challenged delivered.
